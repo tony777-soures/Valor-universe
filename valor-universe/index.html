@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Valor Universe | Watches, Fashion, Perfumes & Accessories</title>
+<meta name="description" content="Valor Universe is a premium lifestyle store for men and women: wristwatches, suits, hoodies, perfumes and accessories. Order directly.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#top">Valor Universe</a>
+  <nav>
+    <a href="#collections">Collections</a>
+    <a href="#how">How to order</a>
+    <a href="#order" class="pill">Place an order</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-copy">
+    <h1>One universe. Everything you wear, worn well.</h1>
+    <p>Wristwatches, tailored suits, hoodies, perfumes and accessories for him and for her. Pick what you love and order in a minute.</p>
+    <div class="cta">
+      <a class="btn" href="#order">Place an order</a>
+      <a class="btn ghost" href="#collections">Browse collections</a>
+    </div>
+  </div>
+  <div class="orbit" aria-hidden="true">
+    <div class="core">V</div>
+    <div class="ring r1"><span>Watches</span></div>
+    <div class="ring r2"><span>Perfumes</span></div>
+    <div class="ring r3"><span>Suits</span></div>
+    <div class="ring r4"><span>Hoodies</span></div>
+  </div>
+</section>
+
+<section id="collections" class="wrap">
+  <h2>Collections</h2>
+  <ul class="rows">
+    <li><h3>Wristwatches</h3><p>Steel, leather and minimal dials for every wrist.</p><a href="#order" data-pick="Wristwatches">Order</a></li>
+    <li><h3>Suits & formal wear</h3><p>Sharp cuts for weddings, work and big nights.</p><a href="#order" data-pick="Suits & formal wear">Order</a></li>
+    <li><h3>Hoodies & streetwear</h3><p>Heavy fabric, clean fits, made for daily wear.</p><a href="#order" data-pick="Hoodies & streetwear">Order</a></li>
+    <li><h3>Perfumes</h3><p>Signature scents, from fresh and light to deep and warm.</p><a href="#order" data-pick="Perfumes">Order</a></li>
+    <li><h3>Accessories</h3><p>Belts, bags, sunglasses, jewellery and finishing touches.</p><a href="#order" data-pick="Accessories">Order</a></li>
+  </ul>
+</section>
+
+<section class="split">
+  <div class="him"><h2>For him</h2><p>Watches with presence, suits that fit right, and fragrances that linger.</p></div>
+  <div class="her"><h2>For her</h2><p>Elegant pieces, soft scents and accessories that complete the look.</p></div>
+</section>
+
+<section id="how" class="wrap">
+  <h2>How to order</h2>
+  <ol class="steps">
+    <li><b>Tell us what you want.</b> Choose a category and describe the item, size or colour.</li>
+    <li><b>We confirm.</b> We reply on WhatsApp with availability, price and photos.</li>
+    <li><b>We deliver.</b> Pay once you are happy and receive your order at your door.</li>
+  </ol>
+</section>
+
+<section id="order" class="wrap order">
+  <div>
+    <h2>Place your order</h2>
+    <p>Fill in the form and your order opens in WhatsApp, ready to send. Prefer email? Use the second button.</p>
+    <div class="contact">
+      <p><b>WhatsApp</b><br><a id="waLink" href="#">+234 000 000 0000</a></p>
+      <p><b>Email</b><br><a id="mailLink" href="#">hello@valoruniverse.com</a></p>
+      <p><b>Instagram</b><br><a href="#">@valoruniverse</a></p>
+    </div>
+  </div>
+  <form id="orderForm" novalidate>
+    <label>Full name<input name="name" required autocomplete="name"></label>
+    <label>Phone number<input name="phone" type="tel" required autocomplete="tel"></label>
+    <label>Category
+      <select name="category" required>
+        <option value="">Select a category</option>
+        <option>Wristwatches</option><option>Suits & formal wear</option><option>Hoodies & streetwear</option><option>Perfumes</option><option>Accessories</option><option>Other</option>
+      </select>
+    </label>
+    <label>What would you like?<textarea name="details" rows="3" required placeholder="Item, size, colour, quantity"></textarea></label>
+    <label>Delivery address<input name="address" required autocomplete="street-address"></label>
+    <p class="msg" id="msg" role="status"></p>
+    <div class="cta">
+      <button class="btn" type="submit">Send order on WhatsApp</button>
+      <button class="btn ghost" type="button" id="emailBtn">Send by email</button>
+    </div>
+  </form>
+</section>
+</main>
+
+<footer><span>Valor Universe</span><span>&copy; <span id="yr"></span> All rights reserved.</span></footer>
+<script src="js/script.js"></script>
+</body>
+</html>
